@@ -1,3 +1,6 @@
+/*------------------*/
+/* Basic Code Shell */
+/*------------------*/
 
 * {
   box-sizing: border-box;
@@ -102,6 +105,12 @@ body {
   font-family: Lato, "Trebuchet MS","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Tahoma,sans-serif;
 }
 
+/* OVERRIDE HEADER WRAP PADDING */
+
+header.wrap {
+  padding: 0;
+}
+
 /* LOGO AND TITLE */
 
 .logo_title {
@@ -125,6 +134,18 @@ h1.title {
 
 h1.title span {
   font-weight: 300;
+}
+
+@media (max-width: 79rem) {
+  .logo_title {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 37.5rem) {
+  .logo_title {
+    margin-left: 1.5rem;
+  }
 }
 
 @media (max-width: 400px) {
@@ -247,7 +268,7 @@ ul.navmenu li ul {
     line-height: 2.8125rem;
     text-align: center;
     width: 3.4rem;
-    margin: 2.1875rem 0;
+    margin: 2.1875rem 2rem 2.1875rem 0;
     cursor: pointer;
   }
 
@@ -272,6 +293,12 @@ ul.navmenu li ul {
     left: 0;
   }
 
+}
+
+@media (max-width: 37.5rem) {
+  .navicon  {
+    margin-right: 1.5rem;
+  }
 }
 
 /* HERO UNIT */
